@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card shadow">
+            <div class="card-body">
+              <h3>Currency Converter</h3>
+              <hr />
+
+              <div class="msg"></div>
+
+              <form id="currency_con">
+                <div class="my-3">
+                  <label for="">Amount</label>
+                  <input class="form-control" type="text" name="amount" />
+                </div>
+
+                <div class="my-3">
+                  <label for="">Select Currency</label>
+                  <select class="form-control" name="currency" id="">
+                    <option value="select">-select-</option>
+                    <option value="USD">USD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="Euro">Euro</option>
+                    <option value="Pound">Pound</option>
+                    <option value="Rupee">Rupee</option>
+                  </select>
+                </div>
+
+                <div class="my-3">
+                  <input
+                    class="btn btn-primary w-100"
+                    type="submit"
+                    value="Check"
+                  />
+                </div>
+              </form>
+            </div>
+
+            <div class="card-footer">
+              <div class="msg_details"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <script src="./apps/function.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
